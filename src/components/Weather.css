@@ -1,0 +1,112 @@
+.weather{
+    background-color: rgb(255, 255, 255);
+    place-self: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 4px 37px -10px rgba(79,79,79,1);
+    -moz-box-shadow: 0px 4px 37px -10px rgba(79,79,79,1);
+    box-shadow: 0px 4px 37px -10px rgba(79,79,79,1);
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.weather__search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather__search-bar input{
+    background-color: rgb(241, 241, 241);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.weather__search-bar input:focus{
+    background-color: rgb(231, 231, 231);
+}
+
+.search-icon{
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.search-icon:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.weather__icon{
+    width: 100px;
+    height: 100px;
+    /* background-image: url(../assets/sunny_weather_icon.svg); */
+    place-self: center;
+}
+
+.weather__icon img{
+    width: 100px;
+    height: 100px;
+}
+
+.temperature{
+    font-size: 3rem;
+}
+
+.weather__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather__humidity-percentage,
+.weather__wind-speed{
+    display: flex;
+    text-align: left;
+    gap: 0.7rem;
+}
+
+.info-text{
+    font-size: 0.9rem;
+}
+
+.suggestions {
+    background: white;
+    width: 100%;
+    max-height: 100px;
+    overflow-y: auto;
+    list-style: none;
+    border-radius:  10px;
+    background-color: rgb(241, 241, 241);
+    margin-top: 8px;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+  .suggestions li:hover {
+    background: rgb(231, 231, 231);
+  }
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#EFCC00 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#EFCC00);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation: l13 1s infinite linear;
+  }
+  @keyframes l13{ 
+    100%{transform: rotate(1turn)}
+  }

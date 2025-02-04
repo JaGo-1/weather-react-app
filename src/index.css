@@ -1,0 +1,39 @@
+/* ---- FONT ---- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+.outfit-regular {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-semiBold {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ---- RESET ---- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input{
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+/* ---- APP ---- */
+.app{
+  min-height: 100vh;
+  display: grid;
+  background-image: linear-gradient(to right top, #d1c2f4, #c7c6f9, #bccafc, #b1cdff, #a6d1ff);;
+}
