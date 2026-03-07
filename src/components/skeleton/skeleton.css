@@ -1,0 +1,27 @@
+.skeleton-box {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  border-radius: 12px;
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+}
+.skeleton-text-sm {
+  height: 1rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.skeleton-text-lg {
+  height: 3.5rem;
+  width: 40%;
+  margin: 0 auto;
+}

@@ -1,5 +1,5 @@
 /* ---- FONT ---- */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap");
 
 .outfit-regular {
   font-family: "Outfit", serif;
@@ -17,23 +17,32 @@
 
 /* ---- RESET ---- */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Outfit", serif;
 }
 
-input{
+input {
   border: none;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
 /* ---- APP ---- */
-.app{
+.app {
   min-height: 100vh;
   display: grid;
-  background-image: linear-gradient(to right top, #d1c2f4, #c7c6f9, #bccafc, #b1cdff, #a6d1ff);;
+  --bg-color-1: #d1c2f4;
+  --bg-color-2: #a6d1ff;
+
+  background-image: linear-gradient(
+    to right top,
+    var(--bg-color-1),
+    var(--bg-color-2)
+  );
+  transition: all 1s ease-in-out;
 }

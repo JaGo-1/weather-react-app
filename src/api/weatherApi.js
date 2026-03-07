@@ -19,7 +19,7 @@ export const getWeatherByCity = async (city) => {
     const data = await response.json();
 
     if (!response.ok) {
-      alert(data.message);
+      throw new Error(data.message || "City not found");
       return;
     }
 
@@ -33,7 +33,7 @@ export const getWeatherByCity = async (city) => {
       icon: data.weather[0].icon,
     };
   } catch (error) {
-    console.log(error);
+    throw error;
     return null;
   }
 };
@@ -56,7 +56,7 @@ export const getCitySuggestions = async (query) => {
     const response = await fetch(url);
     const data = await response.json();
 
-    return data.map((city) => `${city.name}`);
+    return data.map((city) => `${city.name}, ${city.country}`);
   } catch (error) {
     console.log(`An error ocurred getting city suggestions: ${error}`);
   }
