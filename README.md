@@ -3,7 +3,7 @@
 ## 🌤️ Overview
 The **Weather App** is a React application that fetches real-time data from the [OpenWeather API](https://openweathermap.org/api). The project serves as a showcase for **clean architecture** and **enhanced UX**, implementing custom hooks for logic separation, debounced search to optimize API usage, and fluid animations to provide immediate visual feedback.
 
-[🔗 Live Demo](https://weather-lppjwqhio-ja-gos-projects.vercel.app/)
+[🔗 Live Demo](https://skyviewapp.vercel.app/)
 
 ## 📝 Latest Update
 
